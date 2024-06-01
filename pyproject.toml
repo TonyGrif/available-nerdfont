@@ -11,6 +11,8 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
+beautifulsoup4 = "^4.12.3"
+types-beautifulsoup4 = "^4.12.0.20240511"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.2.1"
@@ -24,6 +26,7 @@ isort = "^5.13.2"
 pylint = "^3.2.2"
 ruff = "^0.4.4"
 flake8-pyproject = "^1.2.3"
+poethepoet = "^0.26.1"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -38,6 +41,9 @@ profile = "black"
 [tool.flake8]
 max-line-length = 88
 extend-ignore = ["E203", "E701"]
+
+[tool.poe.tasks]
+test = "pytest --cov --cov-report term-missing"
 
 [build-system]
 requires = ["poetry-core"]

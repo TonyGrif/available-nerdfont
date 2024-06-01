@@ -4,7 +4,6 @@ nerdfonts website, https://www.nerdfonts.com/
 
 from urllib.request import urlopen
 
-
 DOWNLOAD_URL = "https://www.nerdfonts.com/font-downloads"
 
 
