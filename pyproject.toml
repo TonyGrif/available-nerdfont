@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "available-nerdfont"
-version = "0.1.0"
+version = "1.0.0"
 description = "Python script to find which nerdfonts are available for download"
 authors = ["TonyGrif <TonyGriffin2000@gmail.com>"]
 license = "MIT"
