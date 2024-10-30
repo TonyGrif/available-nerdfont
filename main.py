@@ -1,11 +1,14 @@
-"""This module contains the running script for the Available Nerdfonts program."""
+"""This module contains the running script for the Available Nerdfonts program.
+
+This program can be run with `python main.py` and all output will go to standard out.
+Additional information can be found using `python main.py -h`.
+"""
 
 import argparse
 import logging
 from pprint import pprint
 
-from src.parsing import parse_html
-from src.scraping import get_download_page
+from src import get_download_page, parse_html
 
 
 def main():
