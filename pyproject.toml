@@ -10,7 +10,7 @@ packages = [
 ]
 
 [tool.poetry.scripts]
-available_nerdfont = "src.__main__:main"
+available-nerdfont = "src.__main__:main"
 
 [tool.poetry.dependencies]
 python = "^3.8"
