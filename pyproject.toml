@@ -47,6 +47,14 @@ extend-ignore = ["E203", "E701"]
 
 [tool.poe.tasks]
 test = "pytest --cov --cov-report term-missing"
+_mypy = "mypy src/"
+_ruff = "ruff check src/"
+_pylint = "pylint src/"
+_flake = "flake8 src/"
+lint = [ "_mypy", "_ruff", "_pylint", "_flake" ]
+_imports = "isort src/"
+_format = "black src/"
+format = [ "_imports", "_format" ]
 
 [build-system]
 requires = ["poetry-core"]
